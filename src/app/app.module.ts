@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ContactoComponent } from './contacto/contacto.component';
+import { InformacionComponent } from './informacion/informacion.component';
+import { NoticiasComponent } from './noticias/noticias.component';
+import {QuicklinkModule} from 'ngx-quicklink';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QuicklinkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
